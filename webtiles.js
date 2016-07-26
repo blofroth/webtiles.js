@@ -3,7 +3,7 @@
 //          [0][0] is lower left
 //        all columns tiles[$i] should be equal length
 // grid: id of the div to populate with tiles
-function webtiles_load($, grid, url) {
+function webtiles_load($, grid, url, is_debug) {
   $(document).ready(function(){
       $("#" + grid).addClass("webtiles-grid");
       $.getJSON(url, function(result){
@@ -13,7 +13,11 @@ function webtiles_load($, grid, url) {
           var row = $("<div></div>");
           row.addClass("webtiles-row");
           for(var x=0; x < tiles.length; x++){
-            var tile = $("<div></div>");
+            var debug_str = "";
+            if(is_debug){
+              debug_str = "" + tiles[x][y];
+            }
+            var tile = $("<div>" + debug_str +"</div>");
             tile.addClass("webtile");
             tile.addClass("wt-" + tiles[x][y]);
             row.append(tile);
