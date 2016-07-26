@@ -1,0 +1,23 @@
+.webtiles-grid {
+  white-space: nowrap;
+  font-size:0;
+}
+
+.webtile {
+ min-width: 1px;
+ display: inline-block;
+ position: relative;
+ font-size: 8px;
+ text-align: center;
+ vertical-align: middle;
+ font-family: sans-serif;
+ text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.webtiles-row {
+ clear: both;
+}
