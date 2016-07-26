@@ -32,15 +32,15 @@ function webtiles_generate_tileset_css($, output_css_pre_id, output_html_pre_id,
 
     // css prelude
     out_css.append(".webtiles-grid div {\n");
-    out_css.append(" min-width: 32px;\n");
-    out_css.append(" width: 32px;\n");
-    out_css.append(" height: 32px;\n");
+    out_css.append(" min-width: " + tile_width + "px;\n");
+    out_css.append(" width: " + tile_width + "px;\n");
+    out_css.append(" height: " + tile_width + "px;\n");
     out_css.append("}\n");
 
     out_css.append("\n");
 
     out_css.append(".webtile {\n");
-    out_css.append("  line-height: 32px;\n");
+    out_css.append("  line-height: " + tile_height + "px;\n");
     out_css.append("}\n");
 
     function output_tile(i,x_offset,y_offset,img_url) {
