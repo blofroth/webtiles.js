@@ -3,7 +3,7 @@
 //          [0][0] is lower left
 //        all columns tiles[$i] should be equal length
 // grid: id of the div to populate with tiles
-function webtiles_load($, grid, url) {
+function webtiles_load($, grid, url, is_debug) {
   $(document).ready(function(){
       $("#" + grid).addClass("webtiles-grid");
       $.getJSON(url, function(result){
@@ -13,7 +13,11 @@ function webtiles_load($, grid, url) {
           var row = $("<div></div>");
           row.addClass("webtiles-row");
           for(var x=0; x < tiles.length; x++){
-            var tile = $("<div></div>");
+            var debug_str = "";
+            if(is_debug){
+              debug_str = "" + tiles[x][y];
+            }
+            var tile = $("<div>" + debug_str +"</div>");
             tile.addClass("webtile");
             tile.addClass("wt-" + tiles[x][y]);
             row.append(tile);
@@ -32,15 +36,15 @@ function webtiles_generate_tileset_css($, output_css_pre_id, output_html_pre_id,
 
     // css prelude
     out_css.append(".webtiles-grid div {\n");
-    out_css.append(" min-width: 32px;\n");
-    out_css.append(" width: 32px;\n");
-    out_css.append(" height: 32px;\n");
+    out_css.append(" min-width: " + tile_width + "px;\n");
+    out_css.append(" width: " + tile_width + "px;\n");
+    out_css.append(" height: " + tile_width + "px;\n");
     out_css.append("}\n");
 
     out_css.append("\n");
 
     out_css.append(".webtile {\n");
-    out_css.append("  line-height: 32px;\n");
+    out_css.append("  line-height: " + tile_height + "px;\n");
     out_css.append("}\n");
 
     function output_tile(i,x_offset,y_offset,img_url) {
