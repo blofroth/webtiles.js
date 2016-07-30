@@ -475,3 +475,219 @@
 .wt-116 {
   background: url(house.png) -256px -192px;
 }
+/* dirt2.png (0, 0) */
+.wt-117 {
+  background: url(dirt2.png) 0px 0px;
+}
+/* dirt2.png (1, 0) */
+.wt-118 {
+  background: url(dirt2.png) -32px 0px;
+}
+/* dirt2.png (2, 0) */
+.wt-119 {
+  background: url(dirt2.png) -64px 0px;
+}
+/* dirt2.png (0, 1) */
+.wt-120 {
+  background: url(dirt2.png) 0px -32px;
+}
+/* dirt2.png (1, 1) */
+.wt-121 {
+  background: url(dirt2.png) -32px -32px;
+}
+/* dirt2.png (2, 1) */
+.wt-122 {
+  background: url(dirt2.png) -64px -32px;
+}
+/* dirt2.png (0, 2) */
+.wt-123 {
+  background: url(dirt2.png) 0px -64px;
+}
+/* dirt2.png (1, 2) */
+.wt-124 {
+  background: url(dirt2.png) -32px -64px;
+}
+/* dirt2.png (2, 2) */
+.wt-125 {
+  background: url(dirt2.png) -64px -64px;
+}
+/* dirt2.png (0, 3) */
+.wt-126 {
+  background: url(dirt2.png) 0px -96px;
+}
+/* dirt2.png (1, 3) */
+.wt-127 {
+  background: url(dirt2.png) -32px -96px;
+}
+/* dirt2.png (2, 3) */
+.wt-128 {
+  background: url(dirt2.png) -64px -96px;
+}
+/* dirt2.png (0, 4) */
+.wt-129 {
+  background: url(dirt2.png) 0px -128px;
+}
+/* dirt2.png (1, 4) */
+.wt-130 {
+  background: url(dirt2.png) -32px -128px;
+}
+/* dirt2.png (2, 4) */
+.wt-131 {
+  background: url(dirt2.png) -64px -128px;
+}
+/* dirt2.png (0, 5) */
+.wt-132 {
+  background: url(dirt2.png) 0px -160px;
+}
+/* dirt2.png (1, 5) */
+.wt-133 {
+  background: url(dirt2.png) -32px -160px;
+}
+/* dirt2.png (2, 5) */
+.wt-134 {
+  background: url(dirt2.png) -64px -160px;
+}
+/* lavarock.png (0, 0) */
+.wt-135 {
+  background: url(lavarock.png) 0px 0px;
+}
+/* lavarock.png (1, 0) */
+.wt-136 {
+  background: url(lavarock.png) -32px 0px;
+}
+/* lavarock.png (2, 0) */
+.wt-137 {
+  background: url(lavarock.png) -64px 0px;
+}
+/* lavarock.png (0, 1) */
+.wt-138 {
+  background: url(lavarock.png) 0px -32px;
+}
+/* lavarock.png (1, 1) */
+.wt-139 {
+  background: url(lavarock.png) -32px -32px;
+}
+/* lavarock.png (2, 1) */
+.wt-140 {
+  background: url(lavarock.png) -64px -32px;
+}
+/* lavarock.png (0, 2) */
+.wt-141 {
+  background: url(lavarock.png) 0px -64px;
+}
+/* lavarock.png (1, 2) */
+.wt-142 {
+  background: url(lavarock.png) -32px -64px;
+}
+/* lavarock.png (2, 2) */
+.wt-143 {
+  background: url(lavarock.png) -64px -64px;
+}
+/* lavarock.png (0, 3) */
+.wt-144 {
+  background: url(lavarock.png) 0px -96px;
+}
+/* lavarock.png (1, 3) */
+.wt-145 {
+  background: url(lavarock.png) -32px -96px;
+}
+/* lavarock.png (2, 3) */
+.wt-146 {
+  background: url(lavarock.png) -64px -96px;
+}
+/* lavarock.png (0, 4) */
+.wt-147 {
+  background: url(lavarock.png) 0px -128px;
+}
+/* lavarock.png (1, 4) */
+.wt-148 {
+  background: url(lavarock.png) -32px -128px;
+}
+/* lavarock.png (2, 4) */
+.wt-149 {
+  background: url(lavarock.png) -64px -128px;
+}
+/* lavarock.png (0, 5) */
+.wt-150 {
+  background: url(lavarock.png) 0px -160px;
+}
+/* lavarock.png (1, 5) */
+.wt-151 {
+  background: url(lavarock.png) -32px -160px;
+}
+/* lavarock.png (2, 5) */
+.wt-152 {
+  background: url(lavarock.png) -64px -160px;
+}
+/* cement.png (0, 0) */
+.wt-153 {
+  background: url(cement.png) 0px 0px;
+}
+/* cement.png (1, 0) */
+.wt-154 {
+  background: url(cement.png) -32px 0px;
+}
+/* cement.png (2, 0) */
+.wt-155 {
+  background: url(cement.png) -64px 0px;
+}
+/* cement.png (0, 1) */
+.wt-156 {
+  background: url(cement.png) 0px -32px;
+}
+/* cement.png (1, 1) */
+.wt-157 {
+  background: url(cement.png) -32px -32px;
+}
+/* cement.png (2, 1) */
+.wt-158 {
+  background: url(cement.png) -64px -32px;
+}
+/* cement.png (0, 2) */
+.wt-159 {
+  background: url(cement.png) 0px -64px;
+}
+/* cement.png (1, 2) */
+.wt-160 {
+  background: url(cement.png) -32px -64px;
+}
+/* cement.png (2, 2) */
+.wt-161 {
+  background: url(cement.png) -64px -64px;
+}
+/* cement.png (0, 3) */
+.wt-162 {
+  background: url(cement.png) 0px -96px;
+}
+/* cement.png (1, 3) */
+.wt-163 {
+  background: url(cement.png) -32px -96px;
+}
+/* cement.png (2, 3) */
+.wt-164 {
+  background: url(cement.png) -64px -96px;
+}
+/* cement.png (0, 4) */
+.wt-165 {
+  background: url(cement.png) 0px -128px;
+}
+/* cement.png (1, 4) */
+.wt-166 {
+  background: url(cement.png) -32px -128px;
+}
+/* cement.png (2, 4) */
+.wt-167 {
+  background: url(cement.png) -64px -128px;
+}
+/* cement.png (0, 5) */
+.wt-168 {
+  background: url(cement.png) 0px -160px;
+}
+/* cement.png (1, 5) */
+.wt-169 {
+  background: url(cement.png) -32px -160px;
+}
+/* cement.png (2, 5) */
+.wt-170 {
+  background: url(cement.png) -64px -160px;
+}
