@@ -2,16 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-  <title>webtiles.js LPC example</title>
-  <link rel="stylesheet" href="../../webtiles.css">
-  <link rel="stylesheet" href="webtiles-lpc.css">
+  <title>webtiles.js LPC canvas example</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="../../webtiles.js"></script>
+  <script src="../../webtiles-canvas.js"></script>
+  <script src="webtiles-tiledef-lpc.js"></script>
   <script>
-    webtiles_load($, "grid", "tiles.json");
-    webtiles_generate_tileset_css($, "tileset-css", "tileset-json", 
+    var tileset_def = webtiles_palette($, "palette-canvas", "palette-json", 
       ["img-water", "img-dirt", "img-grass", "img-house", "img-dirt2", "img-lavarock", "img-cement"], 
     32, 32);
+    webtiles_load($, "example-canvas", webtiles_tiledef, "tilez.json");
   </script>
 </head>
 
@@ -23,7 +22,7 @@
 
   <p>As defined in <a href="tiles.json">tiles.json</a>. Loaded with webtiles_load().</p>
 
-  <div id="grid" class="webtiles-grid"></div>
+  <canvas id="example-canvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
 
   <h2>Credits</h2>
   <p>
@@ -39,9 +38,9 @@
 
   <div id="tileset-images">
     <img id="img-water" src="water.png"></img>
-    <img id="img-house" src="house.png"></img>
-    <img id="img-grass" src="grass.png"></img>
     <img id="img-dirt" src="dirt.png"></img>
+    <img id="img-grass" src="grass.png"></img>
+    <img id="img-house" src="house.png"></img>
     <img id="img-dirt2" src="dirt2.png"></img>
     <img id="img-lava" src="lava.png"></img>
     <img id="img-lavarock" src="lavarock.png"></img>
@@ -50,12 +49,11 @@
 
   <h3>Generated palette</h3>
   <p><a href="palette.html">Palette</a>. Generated with webtiles_generate_tileset_css(). See below for generated css + html.</p>
+  <canvas id="palette-canvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
 
-  <h3>Generated CSS</h3>
-  <pre id="tileset-css"></pre>
+  <h3>Generated tileset definition</h3>
+  <pre id="palette-json"></pre>
 
-  <h3>Generated html palette</h3>
-  <pre id="tileset-json"></pre>
 </body>
 
 </html>
