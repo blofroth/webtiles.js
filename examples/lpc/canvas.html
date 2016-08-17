@@ -7,8 +7,10 @@
   <script src="../../webtiles-canvas.js"></script>
   <script src="webtiles-tiledef-lpc.js"></script>
   <script>
-    var tileset_def = webtiles_palette($, "palette-canvas", "palette-json", 
-      ["img-water", "img-dirt", "img-grass", "img-house", "img-dirt2", "img-lavarock", "img-cement"], 
+    var tileset_def = webtiles_palette($, "palette-canvas", "palette-json",
+      ["img-water", "img-dirt", "img-grass", "img-house", "img-dirt2",
+      "img-lava", "img-cement", "img-lavarock"
+      ],
     32, 32);
     webtiles_load($, "example-canvas", webtiles_tiledef, "tilez.json");
   </script>
@@ -43,8 +45,8 @@
     <img id="img-house" src="house.png"></img>
     <img id="img-dirt2" src="dirt2.png"></img>
     <img id="img-lava" src="lava.png"></img>
-    <img id="img-lavarock" src="lavarock.png"></img>
     <img id="img-cement" src="cement.png"></img>
+    <img id="img-lavarock" src="lavarock.png"></img>
   </div>
 
   <h3>Generated palette</h3>

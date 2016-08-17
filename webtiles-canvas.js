@@ -21,7 +21,7 @@ function webtiles_draw($, canvas_id, tileset_def, tilez, is_debug) {
     var dx_txt = tw/3;
     var dy_txt = th/3;
     ctx.font = "12px Arial";
-    
+
 
     var h = tilez[0].length;
     var w = tilez.length;
@@ -34,15 +34,12 @@ function webtiles_draw($, canvas_id, tileset_def, tilez, is_debug) {
       for(var x=0; x < w; x++){
         if(tilez[x][y]){
           //handles uneven rows
-          for(var z=0; z < tilez[x][y].length; z++){ 
+          for(var z=0; z < tilez[x][y].length; z++){
             var tile_code = tilez[x][y][z];
             var draw_y = h - y - 1;
-            console.log(" " + x + " " + y + " " + z);
-            console.log(" " + tilez[x][y]);
-            console.log(" " + tile_code);
             var tile_def = tile_map[tile_code];
             var img = document.getElementById(tile_def.img_id);
-            ctx.drawImage(img, 
+            ctx.drawImage(img,
               tile_def.dx, tile_def.dy,
               tw, th,
               x * tw, draw_y * th,
@@ -50,10 +47,10 @@ function webtiles_draw($, canvas_id, tileset_def, tilez, is_debug) {
             if(is_debug && z == tilez[x][y].length - 1){
               ctx.strokeStyle = "blue";
               ctx.strokeText("" + tile_code, dx_txt + x * tw, dy_txt + draw_y * tw);
-            }  
+            }
           }
         }
-        
+
       }
     }
 }
@@ -69,9 +66,9 @@ function webtiles_palette($, palette_canvas_id, palette_json_id, image_ids, tile
 
     $.each(image_ids, function(i, img_id) {
       var img = document.getElementById(img_id);
-      
-      var w = img.width;
-      var h = img.height;
+
+      var w = img.naturalWidth;
+      var h = img.naturalHeight;
       var src = img.src;
 
       console.log("img id: " + img_id);
@@ -85,6 +82,8 @@ function webtiles_palette($, palette_canvas_id, palette_json_id, image_ids, tile
 
       var num_x = w / tile_width;
       var num_y = h / tile_height;
+      console.log("num_x: " + num_x);
+      console.log("num_y: " + num_y);
 
       for(var y=0; y < num_y; y++){
         for(var x=0; x < num_x; x++){
@@ -103,7 +102,7 @@ function webtiles_palette($, palette_canvas_id, palette_json_id, image_ids, tile
     palette
     var tileset_def = {
       tile_height : tile_height,
-      tile_width : tile_width, 
+      tile_width : tile_width,
       tile_map : tile_map
     };
     $("#" + palette_json_id).append(JSON.stringify(tileset_def));
