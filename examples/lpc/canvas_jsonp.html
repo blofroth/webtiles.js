@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>webtiles.js LPC canvas example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../../webtiles-canvas.js"></script>
+  <script src="webtiles-tiledef-lpc.js"></script>
+  <script>
+    var tileset_def = webtiles_palette($, "palette-canvas", "palette-json",
+      ["img-water", "img-dirt", "img-grass", "img-house", "img-dirt2",
+      "img-lava", "img-cement", "img-lavarock"
+      ],
+    32, 32);
+    function draw_jsonp_tilez(tilez) {
+      $(document).ready(function(){
+        webtiles_draw($, "example-canvas", webtiles_tiledef, tilez.tilez);
+      });
+    }
+  </script>
+  <script src="tilez_jsonp.js"></script>
+</head>
+
+<body>
+
+  <h1>LPC webtiles.js example</h1>
+
+  <h2>Tiles</h2>
+
+  <p>As defined in <a href="tiles.json">tiles.json</a>. Loaded with webtiles_load().</p>
+
+  <canvas id="example-canvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
+
+  <h2>Credits</h2>
+  <p>
+    Artwork from <a href="http://lpc.opengameart.org/">Liberated Pixel Cup</a>, specifically the base assets available at <a href="http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles">OpenGameArt</a>. See <a href="CREDITS.TXT">credits</a>.
+  </p>
+
+  <p>
+    Tile layout by <a href="https://github.com/blofroth">blofroth</a>. Will improve... ;)
+  </p>
+
+  <h2>Tileset</h2>
+  <h3>Used images</h3>
+
+  <div id="tileset-images">
+    <img id="img-water" src="water.png"></img>
+    <img id="img-dirt" src="dirt.png"></img>
+    <img id="img-grass" src="grass.png"></img>
+    <img id="img-house" src="house.png"></img>
+    <img id="img-dirt2" src="dirt2.png"></img>
+    <img id="img-lava" src="lava.png"></img>
+    <img id="img-cement" src="cement.png"></img>
+    <img id="img-lavarock" src="lavarock.png"></img>
+  </div>
+
+  <h3>Generated palette</h3>
+  <p><a href="palette.html">Palette</a>. Generated with webtiles_generate_tileset_css(). See below for generated css + html.</p>
+  <canvas id="palette-canvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
+
+  <h3>Generated tileset definition</h3>
+  <pre id="palette-json"></pre>
+
+</body>
+
+</html>
