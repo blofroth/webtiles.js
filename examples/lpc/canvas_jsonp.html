@@ -9,11 +9,16 @@
   <script>
     var tileset_def = webtiles_palette($, "palette-canvas", "palette-json",
       ["img-water", "img-dirt", "img-grass", "img-house", "img-dirt2",
-      "img-lava", "img-cement", "img-lavarock"
+      "img-lava", "img-cement", "img-lavarock", "img-treetop", "img-trunk"
       ],
     32, 32);
-    webtiles_load($, "example-canvas", webtiles_tiledef, "tilez.json");
+    function draw_jsonp_tilez(tilez) {
+      $(document).ready(function(){
+        webtiles_draw($, "example-canvas", webtiles_tiledef, tilez.tilez);
+      });
+    }
   </script>
+  <script src="tilez_jsonp.js"></script>
 </head>
 
 <body>
@@ -47,6 +52,8 @@
     <img id="img-lava" src="lava.png"></img>
     <img id="img-cement" src="cement.png"></img>
     <img id="img-lavarock" src="lavarock.png"></img>
+    <img id="img-treetop" src="treetop.png"></img>
+    <img id="img-trunk" src="trunk.png"></img>
   </div>
 
   <h3>Generated palette</h3>
